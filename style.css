@@ -5,9 +5,9 @@
 }
 
 :root {
-    --primary-color: #3498db;
+    --primary-color: #353535;
     --secondary-color: #2ecc71;
-    --background-color: #ecf0f1;
+    --background-color: #FFFFFF;
     --text-color: #34495e;
     --card-background: #ffffff;
     --shadow-color: rgba(0, 0, 0, 0.1);
@@ -31,5 +31,45 @@ h1 {
     text-align: center;
     color: var(--primary-color);
     font-size: 2.5em;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+form .product-input {
+    flex-grow: 1;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid var(--primary-color);
+    border-radius: 25px;
+    outline: none;
+}
+
+form .product-input:focus {
+    box-shadow: 0 0 5px var(--primary-color);
+}
+
+form button {
+    padding: 12px 25px;
+    background-color: var(--primary-color);
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: var(--background-color);
+    border-radius: 25px;
+}
+
+form button:hover {
+    background-color: #8A897C;
+}
+
+.product-list {
+    background-color: var(--card-background);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px var(--shadow-color);
+    text-align: center;
 }
